@@ -1,0 +1,19 @@
+<ul class="list-group">
+  {% if active == "profile" %}
+    <li class="list-group-item disabled">Profile</li>
+  {% else %}
+    <li class="list-group-item"><a href="{% url 'users:profile_view' %}">Profile</a></li>
+  {% endif %}
+
+  {% if active == "email" %}
+    <li class="list-group-item disabled">Email settings</li>
+  {% else %}
+    <li class="list-group-item"><a href="{% url 'users:email_change' %}">Email settings</a></li>
+  {% endif %}
+
+  {% if active == "password" %}
+    <li class="list-group-item disabled">Change your password</li>
+  {% else %}
+    <li class="list-group-item"><a href="{% url 'users:password_change' %}">Change your password</a></li>
+  {% endif %}
+</ul>

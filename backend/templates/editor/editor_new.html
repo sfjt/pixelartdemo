@@ -1,0 +1,14 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block main %}
+  <div class="container">
+    <h2 id="px-editor-title" contenteditable="true">New Canvas</h2>
+    {% include 'editor/editor_base.html' %}
+  </div>
+  <div id="px-editor-id" style="display: none;"></div>
+{% endblock main %}
+
+{% block scripts %}
+  <script type="text/javascript" src="{% static 'js/pxeditor.js' %}"></script>
+{% endblock scripts %}

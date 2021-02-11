@@ -1,0 +1,8 @@
+{% extends 'common/base.html' %}
+
+{% block main %}
+  <div class="container text-center mt-4">
+    <h2>Welcome to PiX!</h2>
+    <a class="btn btn-outline-primary btn-lg mt-4" href="{% url 'landing:login' %}">Login</a>
+  </div>
+{% endblock main %}

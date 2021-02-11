@@ -1,0 +1,3 @@
+Please click the below link to verify your new email address.
+
+{{ protocol}}://{{ domain }}{% url 'users:email_change_verification' token %}

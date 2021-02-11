@@ -1,0 +1,5 @@
+Welcome to PiX!
+
+Please click the below link to confirm your email address and complete signup.
+
+{{ protocol}}://{{ domain }}{% url 'users:signup_verification' token %}

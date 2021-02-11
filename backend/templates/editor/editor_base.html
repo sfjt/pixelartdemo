@@ -1,0 +1,54 @@
+<div id="px-editor-control-top" class="row d-flex justify-content-end">
+  <div class="col-5">
+    <i id="px-editor-tool-save" class="fas fa-save editor-control-icon"></i>
+    <i id="px-editor-tool-downoad-image" class="fas fa-download editor-control-icon"></i>
+    <i id="px-editor-tool-resize" class="fas fa-expand-arrows-alt editor-control-icon"></i>
+  </div>
+
+  <div class="col-5">
+    <i id="px-editor-tool-undo" class="fas fa-undo-alt editor-control-icon"></i>
+    <i id="px-editor-tool-redo" class="fas fa-long-arrow-alt-right editor-control-icon"></i>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div id="px-editor-control-left" class="col-2 d-flex flex-column align-items-end">
+      <i id="px-editor-mode-paint" class="fas fa-pen editor-control-icon"></i>
+      <i id="px-editor-mode-clear" class="fas fa-eraser editor-control-icon"></i>
+      <i id="px-editor-mode-fill" class="fas fa-fill-drip editor-control-icon"></i>
+      <i id="px-editor-mode-pick" class="fas fa-eye-dropper editor-control-icon"></i>
+      <input id="px-editor-color" type="color">
+  </div>
+
+  <div id="px-editor-canvas-container" class="col-10 border px-4"></div>
+</div>
+
+<div id="px-editor-popups">
+  <div id="px-editor-popup-base" class='inactive'></div>
+
+  <div id="px-editor-resize-popup" class="px-editor-popup inactive">
+    <div class="form-group-row mt-2">
+      <label for="px-editor-input-resize-x">X: </label>
+      <input type="number" id="px-editor-input-resize-x" min="0" max="30" class="form-control">
+    </div>
+    <div class="form-group-row mt-2">
+      <label for="px-editor-input-resize-y">Y: </label>
+      <input type="number" id="px-editor-input-resize-y" min="0" max="30" class="form-control">
+    </div>
+    <div class="row mt-2 justify-content-center">
+      <span id="px-editor-execute-resize" class="btn btn-primary mx-2">Resize</span>
+      <span id="px-editor-cancel-resize" class="btn btn-outline-secondary mx-2 px-editor-tool-cancel">Cancel</span>
+    </div>
+  </div>
+
+  <div id="px-editor-download-image-popup" class="px-editor-popup inactive">
+    <div class="form-group-row mt-2">
+      <label for="px-editor-input-pixelsize">Pixel size: </label>
+      <input type="number" id="px-editor-input-pixelsize" min="0" max="30" value="1" class="form-control">
+    </div>
+    <div class="row mt-2 justify-content-center">
+      <span id="px-editor-execute-download-image" class="btn btn-primary mx-2">Download image</span>
+      <span id="px-editor-cancel-execute-download-image" class="btn btn-outline-secondary mx-2 px-editor-tool-cancel">Cancel</span>
+    </div>
+  </div>
+</div>

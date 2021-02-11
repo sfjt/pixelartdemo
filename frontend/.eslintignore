@@ -1,0 +1,6 @@
+/node_modules/
+/buildtest/
+**/__tests__/
+**/__webdriver__/
+*config.*.js
+**/*.d.ts

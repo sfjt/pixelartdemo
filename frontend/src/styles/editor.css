@@ -1,0 +1,39 @@
+#px-editor-canvas-root {
+  margin: 16px auto;
+}
+
+#px-editor-color {
+  margin: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+#px-editor-popup-base {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.px-editor-popup {
+  padding: 16px;
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+  border-radius: 8px;
+}
+
+.px-editor-popup * {
+  z-index: auto;
+}
+
+.inactive {
+  visibility: hidden;
+}
+
+.editor-control-icon {
+  margin: 8px;
+  font-size: 32px;
+  cursor: pointer;
+}

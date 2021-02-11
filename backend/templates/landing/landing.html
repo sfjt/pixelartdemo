@@ -1,0 +1,12 @@
+{% extends 'common/base.html' %}
+
+{% block main %}
+  <div class="container text-center mt-4 w-600p">
+    {% if user.is_authenticated %}
+      <p><a href="{% url 'editor:list' %}">Start your pixel art!</a></p>
+    {% else %}
+      <a class="btn btn-primary btn-lg" href="{% url 'landing:signup' %}">SignUp</a>
+      <a class="btn btn-outline-primary btn-lg" href="{% url 'landing:login' %}">Login</a>
+    {% endif %}
+  </div>
+{% endblock main %}

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+  {% block css %}{% endblock css %}
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+  {% include 'common/nav.html' %}
+  <main role="main">
+    {% block main %}{% endblock main %}
+  </main>
+  <script src="{% static 'bootstrap/js/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  {% block scripts %}{% endblock scripts %}
+</body>
+
+</html>

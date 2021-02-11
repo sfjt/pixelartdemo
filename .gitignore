@@ -1,0 +1,12 @@
+# backend - Python
+/**/.idea/
+/**/__pycache__/
+/**/venv/
+/**/db.sqlite3
+/**/local_settings.py
+
+# frontend - Node.js
+/**/node_modules/
+/**/debug.log
+/frontend/build_dev/*
+!/frontend/build_dev/index.html

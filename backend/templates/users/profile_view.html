@@ -1,0 +1,18 @@
+{% extends 'common/base.html' %}
+
+{% block main %}
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        {% include "users/account_settings_list.html" with active="profile" %}
+      </div>
+
+      <div class="col-9">
+        <h2>Profile</h2>
+        <h3>{{ user.name }}</h3>
+        <p></p>
+        <a class="btn btn-outline-primary btn-lg" href="{% url "users:profile_change" %}">Edit profile</a>
+      </div>
+    </div>
+  </div>
+{% endblock main %}
