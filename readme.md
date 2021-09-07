@@ -1,7 +1,9 @@
 # Pixel Art Editor Demo
 
-This is my demo application built with Python and TypeScript.
+This is my demo application built with Python and TypeScript.  
 You can edit, save, download your pixel arts with it.
+
+![animation](animation.gif)
 
 ## How to start locally
 
@@ -14,3 +16,6 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
+
+**Note:**  
+The security e-mails are displayed in your console on the local environment.

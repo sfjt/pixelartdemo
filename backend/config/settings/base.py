@@ -110,8 +110,3 @@ REST_FRAMEWORK = {
 }
 
 LOGOUT_REDIRECT_URL = 'landing:default'
-
-try:
-    from .local_settings import *
-except ImportError:
-    print('Could not import local_settings.py')
